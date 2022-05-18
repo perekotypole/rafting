@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="./css/viewer.min.css">
+  <link rel="stylesheet" href="./css/stylesheets.min.css">
+  <link rel="stylesheet" href="./css/touchTouch.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+
+  <script src="./js/jquery.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  
+</head>
+<body>
+  <main>
+    <div class="preview">
+      <div class="preview__screen preview__screen">
+        <img loading="lazy"  alt="jeeping" src="./img/Rectangle 18.png">
+      </div>
+
+      <header class="header">
+        <div class="container">
+          <a href="/"><img loading="lazy"  alt="4 mountains" src="./img/Group 10.svg"></a>
+
+          <ul class="header__menu">
+            <li class="header__menu-item"><a href="/">головна</a></li>
+            <li class="header__menu-item"><a href="/rafting.html">рафтинг</a></li>
+            <li class="header__menu-item"><a href="/jeeping.html">джипінг</a></li>
+            <li class="header__menu-item"><a href="/hotel.html">проживання</a></li>
+            <li class="header__menu-item"><a href="/transfer.html">трансфер</a></li>
+            <li class="header__menu-item"><a href="/contact.html">контакти</a></li>
+            <li class="header__menu-item" id="lang" onclick="changeLang()">ua</li>
+          </ul>
+        </div>
+      </header>
+    </div>
+
+    <div class="content">
+      <div class="block block-jeeping__description">
+  
+        <div class="block-jeeping__description-content">
+          <div class="container">
+            <div class="title">КАРПАТСЬКІ ПОДОРОЖІ НА ПОЗАШЛЯХОВИКАХ</div>
+  
+            <div class="block-jeeping__description-content-text text">
+              <div>
+                <p><b>
+                  Цікавий та пізнавальний джип-тур Карпатами на полонину Ягідна (с.Микуличин), під час якого на нас чекатиме:
+                </b></p>
+  
+                <ul>
+                  <li>
+                    карпатське бездоріжжя та відчуття “трясе дайбоже”
+                  </li>
+                  <li>
+                    захоплюючий зіплайн, довжиною 500 метрів 
+                  </li>
+                  <li>
+                    гуцульський обід – банош з бринзою та шкварками
+                  </li>
+                  <li>
+                    “сирні набутки” – дегустація карпатських сирів + ознайомлення з методами сироваріння від пана Василя
+                  </li>
+                </ul>
+              </div>
+              
+              <div>
+                <p><b>
+                  Що потрібно з собою мати ?
+                </b></p>
+  
+                <ul>
+                  <li>
+                    теплий одяг (не вірте прогнозам погоди, в Карпатах її не передбачиш)
+                  </li>
+                  <li>
+                    хоробрість (під час поїздки, зрозумієте, про що йде мова :) )
+                  </li>
+                </ul>
+              </div>
+              
+              <div>
+                <p><b>
+                  У вартість входять:
+                </b></p>
+  
+                <ul>
+                  <li>
+                    Подорож на позашляховику
+                  </li>
+                  <li>
+                    Дегустація сирів (без зловживань :) )
+                  </li>
+                  <li>
+                    Доставка з кінцевої точки зіплайну до початкової.
+                  </li>
+                </ul>
+              </div>
+              
+              <div>
+                <p><b>
+                  У вартість не входять:
+                </b></p>
+  
+                <ul>
+                  <li>
+                    Зіплайн (оплачується згідно актуальних розцінок)
+                  </li>
+                  <li>
+                    Обід
+                  </li>
+                  <li>
+                    Дощовики (можна докупити під час поїздки).
+                  </li>
+                </ul>
+              </div>
+           
+            </div>
+          </div>
+  
+          <div class="block-jeeping__description-content-blue">
+            <div class="container">
+              <div class="subtitle">Виїзди відбуваються за набором групи бажаючих.</div>
+              <div class="subtitle">Телефон для замовлень – <a href="tel:067 100 11 56">067 100 11 56</a></div>
+            </div>
+          </div>
+        </div>
+  
+        <img  class="background-image"  src="./img/Group 31.svg">
+      </div>
+
+      <div class="block block-jeeping__slider">
+        <div class="container">
+          <div class="title">МАРШРУТИ</div>
+        </div>
+
+        <div class="block-jeeping__slider-content">
+          <div class="slideShow">
+            <ul class="slideShow__container">
+              <li class="slideShow__slide">
+                <figure class="slideShow__image">
+                  <img loading="lazy"  src="./img/slider/Rectangle 51.png" alt="Село Буркут">
+                </figure>
+                <div class="slideShow__title">Село Буркут</div>
+              </li>
+              <li class="slideShow__slide">
+                <figure class="slideShow__image">
+                  <img loading="lazy"  src="./img/slider/Group 88.png" alt="Село Дземброня">
+                </figure>
+                <div class="slideShow__title">Село Дземброня</div>
+              </li>
+              <li class="slideShow__slide">
+                <figure class="slideShow__image">
+                  <img loading="lazy"  src="./img/slider/Group 89.png" alt="Село Бистрець">
+                </figure>
+                <div class="slideShow__title">Село Бистрець</div>
+              </li>
+              <li class="slideShow__slide">
+                <figure class="slideShow__image">
+                  <img loading="lazy"  src="./img/slider/Group 91.png" alt="Село Красник">
+                </figure>
+                <div class="slideShow__title">Село Красник</div>
+              </li>
+              <li class="slideShow__slide">
+                <figure class="slideShow__image">
+                  <img loading="lazy"  src="./img/slider/Group 93.png" alt="Писаний Камінь">
+                </figure>
+                <div class="slideShow__title">Писаний Камінь</div>
+              </li>
+              <li class="slideShow__slide">
+                <figure class="slideShow__image">
+                  <img loading="lazy"  src="./img/slider/Group 95.png" alt="Гора Роги">
+                </figure>
+                <div class="slideShow__title">Гора Роги</div>
+              </li>
+            </ul>
+
+            <div class="slideShow__next"></div>
+            <div class="slideShow__prev"></div>
+          </div>
+        </div>
+
+        <div class="container">
+          <a class="button" href="/contact.html" style="margin: 1em auto;">Зв'яжіться з нами</a>
+        </div>
+      </div>
+
+      <div class="block block-jeeping__gallary">
+        <div class="container">
+          <div class="title">ГАЛЕРЕЯ</div>
+
+          <div class="block-jeeping__gallary-content">
+            <a class="block-jeeping__gallary-item" href="./img/jeeping/Rectangle 22.png">
+              <img loading="lazy"  src="./img/jeeping/Rectangle 22.png">
+            </a>
+            
+            <a class="block-jeeping__gallary-item" href="./img/jeeping/Group 34.png">
+              <img loading="lazy"  src="./img/jeeping/Group 34.png">
+            </a>
+            
+            <a class="block-jeeping__gallary-item" href="./img/jeeping/Rectangle 21.png">
+              <img loading="lazy"  src="./img/jeeping/Rectangle 21.png">
+            </a>
+            
+            <a class="block-jeeping__gallary-item" href="./img/jeeping/Group 36.png">
+              <img loading="lazy"  src="./img/jeeping/Group 36.png">
+            </a>
+            
+            <a class="block-jeeping__gallary-item" href="./img/jeeping/Group 38.png">
+              <img loading="lazy"  src="./img/jeeping/Group 38.png">
+            </a>
+            
+            <a class="block-jeeping__gallary-item" href="./img/jeeping/Group 40.png">
+              <img loading="lazy"  src="./img/jeeping/Group 40.png">
+            </a>
+            
+            <a class="block-jeeping__gallary-item" href="./img/jeeping/Group 42.png">
+              <img loading="lazy"  src="./img/jeeping/Group 42.png">
+            </a>
+
+            <a class="block-jeeping__gallary-item" href="./img/jeeping/Rectangle 34.png">
+              <img loading="lazy"  src="./img/jeeping/Rectangle 34.png">
+            </a>
+          </div>
+
+          <img class="background-image" src="./img/Group 75.png">
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__first">
+        <div class="container">
+          <div class="footer__first-left">
+            <a href="/"><img loading="lazy"  alt="4 mountains" src="./img/Group 10.svg"></a>
+
+            <ul class="footer__first-left-menu">
+              <li class="footer__first-left-menu-item"><a href="/">головна</a></li>
+              <li class="footer__first-left-menu-item"><a href="/rafting.html">рафтинг</a></li>
+              <li class="footer__first-left-menu-item"><a href="/jeeping.html">джипінг</a></li>
+              <li class="footer__first-left-menu-item"><a href="/hotel.html">проживання</a></li>
+              <li class="footer__first-left-menu-item"><a href="/transfer.html">трансфер</a></li>
+              <li class="footer__first-left-menu-item"><a href="/contact.html">контакти</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer__first-right">
+            <div  class="footer__first-right-title">
+              Контакти
+            </div>
+
+            <div class="footer__first-right-contact">
+              <div>тел. <a href="tel:+380686350255">068 635 02 55<a></div>
+              <div>тел. <a href="tel:+380507004497">050 700 44 97</a></div>
+              <div>email: <a href="mailto:mr.kavacyuk@gmail.com">mr.kavacyuk@gmail.com</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__second">
+        <div class="container">
+          <div>Copyright 2022</div>
+          <div>made by <img loading="lazy"  alt="Graphite" src="./img/Group 18.svg"></div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="./js/index.js"></script>
+  <script src="./js/slider.js"></script>
+  <script src="./js/touchTouch.js"></script>
+
+  <script>
+    touchTouch(document.body.querySelectorAll('.block-jeeping__gallary-item'));
+  </script>
+</body>
+</html>
