@@ -7,7 +7,11 @@
   <title>Document</title>
 
   <link rel="stylesheet" href="./css/viewer.min.css">
+  <link rel="stylesheet" href="./css/menu.min.css">
   <link rel="stylesheet" href="./css/stylesheets.min.css">
+<link rel="stylesheet" href="./css/stylesheets-1024.min.css">
+<link rel="stylesheet" href="./css/stylesheets-768.min.css">
+<link rel="stylesheet" href="./css/stylesheets-425.min.css">
 </head>
 <body>
   <main>
@@ -29,6 +33,29 @@
             <li class="header__menu-item"><a href="transfer.html">трансфер</a></li>
             <li class="header__menu-item"><a href="contact.html">контакти</a></li>
             <li class="header__menu-item" id="lang" onclick="changeLang()">ua</li>
+
+            <li class="header__menu-item header__menu-item-menu">
+              <button class="menu-icon" onclick="const header = document.querySelector('header'); header.classList.toggle('opened');window.addEventListener('scroll', () => {window.scroll(0, header.classList.contains('opened') ? 0 : window.pageYOffset)});">
+                <svg width="40" height="40" viewBox="0 0 100 100">
+                  <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                  <path class="line line2" d="M 20,50 H 80" />
+                  <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="header-mobile">
+          <ul class="header-mobile__menu">
+            <li class="header-mobile__menu-item"><a href="index.html">головна</a></li>
+            <li class="header-mobile__menu-item"><a href="rafting.html">рафтинг</a></li>
+            <li class="header-mobile__menu-item"><a href="hiking.html">походи в гори</a></li>
+            <li class="header-mobile__menu-item"><a href="jeeping.html">джипінг</a></li>
+            <li class="header-mobile__menu-item"><a href="hotel.html">проживання</a></li>
+            <li class="header-mobile__menu-item"><a href="transfer.html">трансфер</a></li>
+            <li class="header-mobile__menu-item"><a href="contact.html">контакти</a></li>
+            <li class="header-mobile__menu-item" id="lang" onclick="changeLang()">ua</li>
           </ul>
         </div>
       </header>
@@ -57,7 +84,7 @@
                 <p>Легенди розповідають, що назва Чорний Черемош пішла від темних вод, що несе потік серед заліснених берегів. Білий Черемош – бо вода в ньому піниться і нуртує на камінні, аж біліє під Сонцем. Інші джерела стверджують, що назви сягають язичницьких часів, коли білий колір асоціювався зі світом Праві – світом Богів, усім позитивним, а чорний – зі світом Наві – світом духів Підземелля, в більшості небезпечним. Етнографи подають нам матеріал, що за давньою народною традицією у гуцулів було прийнято, щоб усі північні притоки річок називати прикметником „чорний” (північ – ніч – чорний), а південні притоки – „білий” (південь – день – білий). А тому Чорний Черемош можна розтлумачити як – “північна притока бурхливо-шумливої ріки”.  За красивою гуцульською легендою, з Чорного моря водою можна дістатися до Святої Землі рахманів, що живуть святим життям. Споконвіків Черемошем пливуть шкаралупки великодніх писанок до святих рахманів. У такий спосіб річка Черемош – Священна Ріка гуцулів – несе свої води від Українських Карпат до Чорного моря і з’єднує гуцулів з усією Україною та цілим світом.</p>
               </div>
 
-              <div>
+              <div class="images-list">
                 <img loading="lazy"  src="./img/DSC_1169.jpg">
                 <img loading="lazy"  src="./img/DSC_0914 (322).jpg">
                 <img loading="lazy"  src="./img/DSC_1004 (395).jpg">
@@ -149,7 +176,7 @@
 
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43105.42220125465!2d24.701434567079673!3d48.12673451822103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4736ef585a173e8f%3A0x766d2d7931ffd7f5!2z0KDQsNGE0YLQuNC90LMg0J_QsNGA0LogIjQg0JPQvtGA0Lgi!5e0!3m2!1sen!2see!4v1651934517018!5m2!1sen!2see"
-            width="1000" height="600" style="border:0; margin: auto; display: block; border-radius: 1em;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>
