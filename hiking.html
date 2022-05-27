@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="./css/stylesheets.min.css">
+  <link rel="stylesheet" href="./css/touchTouch.min.css">
+</head>
+<body>
+  <main>
+    <div class="preview">
+      <div class="preview__screen preview__screen">
+        <img alt="hiking" src="./img/Rectangle 58.png">
+      </div>
+
+      <header class="header">
+        <div class="container">
+          <a href="index.html"><img alt="4 mountains" src="./img/Group 10.svg"></a>
+
+          <ul class="header__menu">
+            <li class="header__menu-item"><a href="index.html">головна</a></li>
+            <li class="header__menu-item"><a href="rafting.html">рафтинг</a></li>
+            <li class="header__menu-item"><a href="hiking.html">походи в гори</a></li>
+            <li class="header__menu-item"><a href="jeeping.html">джипінг</a></li>
+            <li class="header__menu-item"><a href="hotel.html">проживання</a></li>
+            <li class="header__menu-item"><a href="transfer.html">трансфер</a></li>
+            <li class="header__menu-item"><a href="contact.html">контакти</a></li>
+            <li class="header__menu-item" id="lang" onclick="changeLang()">ua</li>
+          </ul>
+        </div>
+      </header>
+    </div>
+
+    <div class="content">
+      <div class="block block-hiking__description">
+        <div class="block-hiking__description-content">
+          <div class="container">
+            <div class="title">ПІШI МАНДРІВКИ КАРПАТАМИ</div>
+  
+            <div class="block-hiking__description-content-text text text-center">
+              <p>Рафтинг Парк «Чотири Гори” пропонує всім, хто хоче випробувати свої сили у активному відпочинку, незабутні походи в гори у Карпатах. Походи в гори – це чудова нагода походити стежками далекими від автомобільних доріг, зануритися у дику природу Карпат, відчути її звуки та запахи від світанку до ночі, побачити рослинний та тваринний світ у його первісному стані.</p>
+              <p>Пропоновані гостям туристичні маршрути (1- та 2-денні) різної складності. Їх можна подолати як самотужки (за допомогою вказівників на тропі), так і в супроводі досвідченого провідника або гіда-екскурсовода, який розкаже і покаже максимум цікавого на обраному маршруті. Хребти Чорногорський та Горгани, гірські озера Синевир та Несамовите, найвищі точки українських Карпат – г. Говерла (2 061 м) та г. Піп Іван (2 028 м) – це та багато іншого можна відвідати під час таких піших подорожей.</p>
+              <p>Обираючи маршрут, мандрівник має визначитися з рівнем складності, який готовий долати, а також бути відповідним чином екіпірованим. Гості можуть мати власне спорядження або взяти його напрокат.На окремих маршрутах  треба <b>обов’язково</b> (!) мати при собі документ, що посвідчує особу.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="block block-hiking__price">
+        <div class="block-hiking__price-content">
+          <div class="container">
+            <div class="block-hiking__price-content-text block-hiking__price-content-text-center text">
+              <p>Ціна на піший похід* для учасників формується з наступних складових:</p>
+              
+              <ul>
+                <li>наявності власного туристичного спорядження та екіпіровки або його прокату**;</li>
+                <li>трансферу до точки початку маршруту та від точки його завершення;</li>
+                <li>вартості послуг провідника або екскурсовода (за бажанням);</li>
+                <li>оплати рекреаційних зборів  (на окремих маршрутах);</li>
+                <li>харчування на маршруті (або власний сухий пайок);</li>
+                <li>кількості учасників у групі (чим їх більше – тим дешевше).</li>
+              </ul>
+
+              <p>*У ціни, запропоновані в описах маршрутів, включені  трансфер та послуги провідника/екскурсовода.</p>
+              <p>** Рюкзаки, дощовики, термоса, намети, спальники, карімати, човни, палиці, та інше (в залежності від маршруту).</p>
+            </div>
+            
+            <img class="background-image" src="./img/Path 1172.svg">
+          </div>
+        </div>
+      </div>
+
+      <div class="block block-hiking__description">
+        <div class="block-hiking__description-content">
+          <div class="container">
+            <div class="block-hiking__description-content-text text text-center">
+              <p>Замовлення на походи у гори приймаються в Рафтинг Парку «Чотири Гори” безпосередньо та за всіма нашими телефонами.</p>
+              <a class="button" style="margin: auto;">Зв'яжіться з нами</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="block block-hiking__routes">
+        <div class="block-hiking__routes-content">
+          <div class="container">
+            <div class="title">Маршрути</div>
+            <p class="text-center">Пропонуємо кілька маршрутів різного рівня складності</p>
+
+            <div class="block-hiking__routes-gallary">
+              <div class="block-hiking__routes-gallary-item block-hiking__routes-gallary-item-primary">
+                <img src="./img/routes/Group 99.png">
+                <span>Гора Шпиці</span>
+              </div>
+              
+              <div class="block-hiking__routes-gallary-item block-hiking__routes-gallary-item-primary">
+                <img src="./img/routes/Group 101.png">
+                <span>Гора Піп-Іван</span>
+              </div>
+              
+              <div class="block-hiking__routes-gallary-item block-hiking__routes-gallary-item-secondary">
+                <img src="./img/routes/Group 103.png">
+                <span>Гора Ребра</span>
+              </div>
+              
+              <div class="block-hiking__routes-gallary-item block-hiking__routes-gallary-item-secondary">
+                <img src="./img/routes/Group 105.png">
+                <span>Гора Кострича</span>
+              </div>
+              
+              <div class="block-hiking__routes-gallary-item block-hiking__routes-gallary-item-secondary">
+                <img src="./img/routes/Group 107.png">
+                <span>Гора Ребра</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__first">
+        <div class="container">
+          <div class="footer__first-left">
+            <a href="index.html"><img alt="4 mountains" src="./img/Group 10.svg"></a>
+
+            <ul class="footer__first-left-menu">
+              <li class="footer__first-left-menu-item"><a href="index.html">головна</a></li>
+              <li class="footer__first-left-menu-item"><a href="rafting.html">рафтинг</a></li>
+              <li class="footer__first-left-menu-item"><a href="hiking.html">походи в гори</a></li>
+              <li class="footer__first-left-menu-item"><a href="jeeping.html">джипінг</a></li>
+              <li class="footer__first-left-menu-item"><a href="hotel.html">проживання</a></li>
+              <li class="footer__first-left-menu-item"><a href="transfer.html">трансфер</a></li>
+              <li class="footer__first-left-menu-item"><a href="contact.html">контакти</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer__first-right">
+            <div  class="footer__first-right-title">
+              Контакти
+            </div>
+
+            <div class="footer__first-right-contact">
+              <div>тел. <a href="tel:+380686350255">068 635 02 55<a></div>
+              <div>тел. <a href="tel:+380507004497">050 700 44 97</a></div>
+              <div>email: <a href="mailto:mr.kavacyuk@gmail.com">mr.kavacyuk@gmail.com</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__second">
+        <div class="container">
+          <div>Copyright 2022</div>
+          <div>made by <img loading="lazy"  alt="Graphite" src="./img/Group 18.svg"></div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="./js/index.js"></script>
+  <script src="./js/touchTouch.js"></script>
+
+  <script>
+    touchTouch(document.body.querySelectorAll('.block-hotel__gallary-item'));
+  </script>
+</body>
+</html>
